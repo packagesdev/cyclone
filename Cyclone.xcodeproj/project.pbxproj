@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F404A7C61AF39D8A00B88DD0 /* RSSCycloneConfigurationWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7C01AF39D8A00B88DD0 /* RSSCycloneConfigurationWindowController.h */; };
+		F404A7C71AF39D8A00B88DD0 /* RSSCycloneConfigurationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F404A7C11AF39D8A00B88DD0 /* RSSCycloneConfigurationWindowController.m */; };
+		F404A7C81AF39D8A00B88DD0 /* RSSCycloneSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7C21AF39D8A00B88DD0 /* RSSCycloneSettings.h */; };
+		F404A7C91AF39D8A00B88DD0 /* RSSCycloneSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F404A7C31AF39D8A00B88DD0 /* RSSCycloneSettings.m */; };
+		F404A7CA1AF39D8A00B88DD0 /* RSSCycloneView.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7C41AF39D8A00B88DD0 /* RSSCycloneView.h */; };
+		F404A7CB1AF39D8A00B88DD0 /* RSSCycloneView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F404A7C51AF39D8A00B88DD0 /* RSSCycloneView.mm */; };
+		F404A7D01AF39E5E00B88DD0 /* Cyclone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F404A7CE1AF39E5E00B88DD0 /* Cyclone.cpp */; };
+		F404A7D11AF39E5E00B88DD0 /* Cyclone.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7CF1AF39E5E00B88DD0 /* Cyclone.h */; };
+		F404A7E41AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7D51AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.h */; };
+		F404A7E51AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F404A7D61AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.m */; };
+		F404A7E61AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F404A7D71AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.xib */; };
+		F404A7E71AF3A4DC00B88DD0 /* RSSConfigurationWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7D81AF3A4DC00B88DD0 /* RSSConfigurationWindowController.h */; };
+		F404A7E81AF3A4DC00B88DD0 /* RSSConfigurationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F404A7D91AF3A4DC00B88DD0 /* RSSConfigurationWindowController.m */; };
+		F404A7E91AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7DA1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.h */; };
+		F404A7EA1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F404A7DB1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.m */; };
+		F404A7EB1AF3A4DC00B88DD0 /* RSSSecondaryBox.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7DC1AF3A4DC00B88DD0 /* RSSSecondaryBox.h */; };
+		F404A7EC1AF3A4DC00B88DD0 /* RSSSecondaryBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F404A7DD1AF3A4DC00B88DD0 /* RSSSecondaryBox.m */; };
+		F404A7ED1AF3A4DC00B88DD0 /* RSSSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7DE1AF3A4DC00B88DD0 /* RSSSettings.h */; };
+		F404A7EE1AF3A4DC00B88DD0 /* RSSSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F404A7DF1AF3A4DC00B88DD0 /* RSSSettings.m */; };
+		F404A7EF1AF3A4DC00B88DD0 /* RSSUserDefaults+Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7E01AF3A4DC00B88DD0 /* RSSUserDefaults+Constants.h */; };
+		F404A7F01AF3A4DC00B88DD0 /* RSSUserDefaults+Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = F404A7E11AF3A4DC00B88DD0 /* RSSUserDefaults+Constants.m */; };
+		F404A7F11AF3A4DC00B88DD0 /* RSSWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7E21AF3A4DC00B88DD0 /* RSSWindow.h */; };
+		F404A7F21AF3A4DC00B88DD0 /* RSSWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F404A7E31AF3A4DC00B88DD0 /* RSSWindow.m */; };
+		F404A7F51AF3A4EB00B88DD0 /* Rgbhsl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F404A7F41AF3A4EB00B88DD0 /* Rgbhsl.cpp */; };
+		F404A7F71AF3A5A400B88DD0 /* Rgbhsl.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7F61AF3A5A400B88DD0 /* Rgbhsl.h */; };
+		F4AA420F1AF536A7006D86F6 /* RSSCycloneConfigurationWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4AA420D1AF536A7006D86F6 /* RSSCycloneConfigurationWindowController.xib */; };
+		F4AA42121AF53909006D86F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4AA42101AF53909006D86F6 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F404A7B21AF39CED00B88DD0 /* Cyclone.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cyclone.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		F404A7B61AF39CED00B88DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F404A7C01AF39D8A00B88DD0 /* RSSCycloneConfigurationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSCycloneConfigurationWindowController.h; sourceTree = "<group>"; };
+		F404A7C11AF39D8A00B88DD0 /* RSSCycloneConfigurationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSCycloneConfigurationWindowController.m; sourceTree = "<group>"; };
+		F404A7C21AF39D8A00B88DD0 /* RSSCycloneSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSCycloneSettings.h; sourceTree = "<group>"; };
+		F404A7C31AF39D8A00B88DD0 /* RSSCycloneSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSCycloneSettings.m; sourceTree = "<group>"; };
+		F404A7C41AF39D8A00B88DD0 /* RSSCycloneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSCycloneView.h; sourceTree = "<group>"; };
+		F404A7C51AF39D8A00B88DD0 /* RSSCycloneView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RSSCycloneView.mm; sourceTree = "<group>"; };
+		F404A7CE1AF39E5E00B88DD0 /* Cyclone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cyclone.cpp; path = GPL/Cyclone.cpp; sourceTree = "<group>"; };
+		F404A7CF1AF39E5E00B88DD0 /* Cyclone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cyclone.h; path = GPL/Cyclone.h; sourceTree = "<group>"; };
+		F404A7D51AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSAboutBoxWindowController.h; path = rsscommon/RSSAboutBoxWindowController.h; sourceTree = "<group>"; };
+		F404A7D61AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSAboutBoxWindowController.m; path = rsscommon/RSSAboutBoxWindowController.m; sourceTree = "<group>"; };
+		F404A7D71AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RSSAboutBoxWindowController.xib; path = rsscommon/RSSAboutBoxWindowController.xib; sourceTree = "<group>"; };
+		F404A7D81AF3A4DC00B88DD0 /* RSSConfigurationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSConfigurationWindowController.h; path = rsscommon/RSSConfigurationWindowController.h; sourceTree = "<group>"; };
+		F404A7D91AF3A4DC00B88DD0 /* RSSConfigurationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSConfigurationWindowController.m; path = rsscommon/RSSConfigurationWindowController.m; sourceTree = "<group>"; };
+		F404A7DA1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSLightGrayBackgroundView.h; path = rsscommon/RSSLightGrayBackgroundView.h; sourceTree = "<group>"; };
+		F404A7DB1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSLightGrayBackgroundView.m; path = rsscommon/RSSLightGrayBackgroundView.m; sourceTree = "<group>"; };
+		F404A7DC1AF3A4DC00B88DD0 /* RSSSecondaryBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSSecondaryBox.h; path = rsscommon/RSSSecondaryBox.h; sourceTree = "<group>"; };
+		F404A7DD1AF3A4DC00B88DD0 /* RSSSecondaryBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSSecondaryBox.m; path = rsscommon/RSSSecondaryBox.m; sourceTree = "<group>"; };
+		F404A7DE1AF3A4DC00B88DD0 /* RSSSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSSettings.h; path = rsscommon/RSSSettings.h; sourceTree = "<group>"; };
+		F404A7DF1AF3A4DC00B88DD0 /* RSSSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSSettings.m; path = rsscommon/RSSSettings.m; sourceTree = "<group>"; };
+		F404A7E01AF3A4DC00B88DD0 /* RSSUserDefaults+Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RSSUserDefaults+Constants.h"; path = "rsscommon/RSSUserDefaults+Constants.h"; sourceTree = "<group>"; };
+		F404A7E11AF3A4DC00B88DD0 /* RSSUserDefaults+Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RSSUserDefaults+Constants.m"; path = "rsscommon/RSSUserDefaults+Constants.m"; sourceTree = "<group>"; };
+		F404A7E21AF3A4DC00B88DD0 /* RSSWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSWindow.h; path = rsscommon/RSSWindow.h; sourceTree = "<group>"; };
+		F404A7E31AF3A4DC00B88DD0 /* RSSWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSWindow.m; path = rsscommon/RSSWindow.m; sourceTree = "<group>"; };
+		F404A7F41AF3A4EB00B88DD0 /* Rgbhsl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Rgbhsl.cpp; path = rsscommon/GPL/Rgbhsl/Rgbhsl.cpp; sourceTree = "<group>"; };
+		F404A7F61AF3A5A400B88DD0 /* Rgbhsl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rgbhsl.h; path = rsscommon/GPL/Rgbhsl/Rgbhsl.h; sourceTree = "<group>"; };
+		F4AA420E1AF536A7006D86F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F4AA42111AF53909006D86F6 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = rsscommon/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F404A7AE1AF39CED00B88DD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F404A7A81AF39CED00B88DD0 = {
+			isa = PBXGroup;
+			children = (
+				F404A7B41AF39CED00B88DD0 /* Cyclone */,
+				F404A7B31AF39CED00B88DD0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F404A7B31AF39CED00B88DD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F404A7B21AF39CED00B88DD0 /* Cyclone.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F404A7B41AF39CED00B88DD0 /* Cyclone */ = {
+			isa = PBXGroup;
+			children = (
+				F404A7D41AF3A4C200B88DD0 /* rsscommon */,
+				F404A7CD1AF39DA200B88DD0 /* GPL */,
+				F404A7C21AF39D8A00B88DD0 /* RSSCycloneSettings.h */,
+				F404A7C31AF39D8A00B88DD0 /* RSSCycloneSettings.m */,
+				F404A7C41AF39D8A00B88DD0 /* RSSCycloneView.h */,
+				F404A7C51AF39D8A00B88DD0 /* RSSCycloneView.mm */,
+				F404A7CC1AF39D9000B88DD0 /* Configuration */,
+				F404A7B51AF39CED00B88DD0 /* Supporting Files */,
+			);
+			path = Cyclone;
+			sourceTree = "<group>";
+		};
+		F404A7B51AF39CED00B88DD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F404A7B61AF39CED00B88DD0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F404A7CC1AF39D9000B88DD0 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F404A7C01AF39D8A00B88DD0 /* RSSCycloneConfigurationWindowController.h */,
+				F404A7C11AF39D8A00B88DD0 /* RSSCycloneConfigurationWindowController.m */,
+				F4AA420D1AF536A7006D86F6 /* RSSCycloneConfigurationWindowController.xib */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		F404A7CD1AF39DA200B88DD0 /* GPL */ = {
+			isa = PBXGroup;
+			children = (
+				F404A7CF1AF39E5E00B88DD0 /* Cyclone.h */,
+				F404A7CE1AF39E5E00B88DD0 /* Cyclone.cpp */,
+			);
+			name = GPL;
+			sourceTree = "<group>";
+		};
+		F404A7D41AF3A4C200B88DD0 /* rsscommon */ = {
+			isa = PBXGroup;
+			children = (
+				F404A7F31AF3A4DF00B88DD0 /* GPL */,
+				F404A7D51AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.h */,
+				F404A7D61AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.m */,
+				F404A7D71AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.xib */,
+				F404A7D81AF3A4DC00B88DD0 /* RSSConfigurationWindowController.h */,
+				F404A7D91AF3A4DC00B88DD0 /* RSSConfigurationWindowController.m */,
+				F404A7DA1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.h */,
+				F404A7DB1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.m */,
+				F404A7DC1AF3A4DC00B88DD0 /* RSSSecondaryBox.h */,
+				F404A7DD1AF3A4DC00B88DD0 /* RSSSecondaryBox.m */,
+				F404A7DE1AF3A4DC00B88DD0 /* RSSSettings.h */,
+				F404A7DF1AF3A4DC00B88DD0 /* RSSSettings.m */,
+				F404A7E01AF3A4DC00B88DD0 /* RSSUserDefaults+Constants.h */,
+				F404A7E11AF3A4DC00B88DD0 /* RSSUserDefaults+Constants.m */,
+				F404A7E21AF3A4DC00B88DD0 /* RSSWindow.h */,
+				F404A7E31AF3A4DC00B88DD0 /* RSSWindow.m */,
+				F4AA42101AF53909006D86F6 /* Localizable.strings */,
+			);
+			name = rsscommon;
+			sourceTree = "<group>";
+		};
+		F404A7F31AF3A4DF00B88DD0 /* GPL */ = {
+			isa = PBXGroup;
+			children = (
+				F404A7F81AF3A5A700B88DD0 /* Rgbhsl */,
+			);
+			name = GPL;
+			sourceTree = "<group>";
+		};
+		F404A7F81AF3A5A700B88DD0 /* Rgbhsl */ = {
+			isa = PBXGroup;
+			children = (
+				F404A7F61AF3A5A400B88DD0 /* Rgbhsl.h */,
+				F404A7F41AF3A4EB00B88DD0 /* Rgbhsl.cpp */,
+			);
+			name = Rgbhsl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F404A7AF1AF39CED00B88DD0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F404A7EB1AF3A4DC00B88DD0 /* RSSSecondaryBox.h in Headers */,
+				F404A7E91AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.h in Headers */,
+				F404A7ED1AF3A4DC00B88DD0 /* RSSSettings.h in Headers */,
+				F404A7D11AF39E5E00B88DD0 /* Cyclone.h in Headers */,
+				F404A7C81AF39D8A00B88DD0 /* RSSCycloneSettings.h in Headers */,
+				F404A7CA1AF39D8A00B88DD0 /* RSSCycloneView.h in Headers */,
+				F404A7E41AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.h in Headers */,
+				F404A7F11AF3A4DC00B88DD0 /* RSSWindow.h in Headers */,
+				F404A7F71AF3A5A400B88DD0 /* Rgbhsl.h in Headers */,
+				F404A7E71AF3A4DC00B88DD0 /* RSSConfigurationWindowController.h in Headers */,
+				F404A7EF1AF3A4DC00B88DD0 /* RSSUserDefaults+Constants.h in Headers */,
+				F404A7C61AF39D8A00B88DD0 /* RSSCycloneConfigurationWindowController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F404A7B11AF39CED00B88DD0 /* Cyclone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F404A7BD1AF39CED00B88DD0 /* Build configuration list for PBXNativeTarget "Cyclone" */;
+			buildPhases = (
+				F404A7AD1AF39CED00B88DD0 /* Sources */,
+				F404A7AE1AF39CED00B88DD0 /* Frameworks */,
+				F404A7AF1AF39CED00B88DD0 /* Headers */,
+				F404A7B01AF39CED00B88DD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cyclone;
+			productName = Cyclone;
+			productReference = F404A7B21AF39CED00B88DD0 /* Cyclone.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F404A7A91AF39CED00B88DD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					F404A7B11AF39CED00B88DD0 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = F404A7AC1AF39CED00B88DD0 /* Build configuration list for PBXProject "Cyclone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F404A7A81AF39CED00B88DD0;
+			productRefGroup = F404A7B31AF39CED00B88DD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F404A7B11AF39CED00B88DD0 /* Cyclone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F404A7B01AF39CED00B88DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F404A7E61AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.xib in Resources */,
+				F4AA42121AF53909006D86F6 /* Localizable.strings in Resources */,
+				F4AA420F1AF536A7006D86F6 /* RSSCycloneConfigurationWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F404A7AD1AF39CED00B88DD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F404A7F21AF3A4DC00B88DD0 /* RSSWindow.m in Sources */,
+				F404A7F51AF3A4EB00B88DD0 /* Rgbhsl.cpp in Sources */,
+				F404A7CB1AF39D8A00B88DD0 /* RSSCycloneView.mm in Sources */,
+				F404A7EA1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.m in Sources */,
+				F404A7D01AF39E5E00B88DD0 /* Cyclone.cpp in Sources */,
+				F404A7F01AF3A4DC00B88DD0 /* RSSUserDefaults+Constants.m in Sources */,
+				F404A7C71AF39D8A00B88DD0 /* RSSCycloneConfigurationWindowController.m in Sources */,
+				F404A7E51AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.m in Sources */,
+				F404A7EC1AF3A4DC00B88DD0 /* RSSSecondaryBox.m in Sources */,
+				F404A7C91AF39D8A00B88DD0 /* RSSCycloneSettings.m in Sources */,
+				F404A7E81AF3A4DC00B88DD0 /* RSSConfigurationWindowController.m in Sources */,
+				F404A7EE1AF3A4DC00B88DD0 /* RSSSettings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4AA420D1AF536A7006D86F6 /* RSSCycloneConfigurationWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4AA420E1AF536A7006D86F6 /* en */,
+			);
+			name = RSSCycloneConfigurationWindowController.xib;
+			sourceTree = "<group>";
+		};
+		F4AA42101AF53909006D86F6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4AA42111AF53909006D86F6 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F404A7BB1AF39CED00B88DD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F404A7BC1AF39CED00B88DD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F404A7BE1AF39CED00B88DD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Cyclone/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		F404A7BF1AF39CED00B88DD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Cyclone/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F404A7AC1AF39CED00B88DD0 /* Build configuration list for PBXProject "Cyclone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F404A7BB1AF39CED00B88DD0 /* Debug */,
+				F404A7BC1AF39CED00B88DD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F404A7BD1AF39CED00B88DD0 /* Build configuration list for PBXNativeTarget "Cyclone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F404A7BE1AF39CED00B88DD0 /* Debug */,
+				F404A7BF1AF39CED00B88DD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F404A7A91AF39CED00B88DD0 /* Project object */;
+}

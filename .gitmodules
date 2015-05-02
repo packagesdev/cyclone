@@ -1,0 +1,3 @@
+[submodule "Cyclone/rsscommon"]
+	path = Cyclone/rsscommon
+	url = https://github.com/packagesdev/rsscommon
