@@ -24,6 +24,8 @@
 	
 	IBOutlet NSButton *_stretchButton;
 	IBOutlet NSButton *_showCurvesButton;
+	
+	NSNumberFormatter * _numberFormatter;
 }
 
 - (IBAction)setNumberOfCyclones:(id)sender;
@@ -40,6 +42,19 @@
 @end
 
 @implementation RSSCycloneConfigurationWindowController
+
+- (void)windowDidLoad
+{
+	[super windowDidLoad];
+	
+	_numberFormatter=[[NSNumberFormatter alloc] init];
+	
+	if (_numberFormatter!=nil)
+	{
+		_numberFormatter.hasThousandSeparators=YES;
+		_numberFormatter.localizesFormat=YES;
+	}
+}
 
 - (Class)settingsClass
 {
@@ -84,7 +99,9 @@
 {
 	((RSSCycloneSettings *) sceneSettings).numberOfParticlesPerCyclone=[sender integerValue];
 	
-	[_numberOfParticlesValueLabel setIntegerValue:((RSSCycloneSettings *) sceneSettings).numberOfParticlesPerCyclone];
+	NSString * tFormattedString=[_numberFormatter stringFromNumber:[NSNumber numberWithUnsignedInteger:((RSSCycloneSettings *) sceneSettings).numberOfParticlesPerCyclone]];
+	
+	[_numberOfParticlesValueLabel setStringValue:tFormattedString];
 }
 
 - (IBAction)setParticleSize:(id)sender
