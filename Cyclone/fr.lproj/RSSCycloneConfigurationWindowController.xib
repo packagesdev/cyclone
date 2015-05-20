@@ -35,25 +35,14 @@
                 <rect key="frame" x="0.0" y="7" width="415" height="394"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" id="8tO-nB-ka0">
-                        <rect key="frame" x="14" y="13" width="91" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="About…" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="666-qW-wxE">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="showAboutBox:" target="-2" id="D3t-IM-DXO"/>
-                        </connections>
-                    </button>
                     <customView id="gc4-db-OuI" customClass="RSSSecondaryBox">
                         <rect key="frame" x="-1" y="61" width="417" height="48"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <subviews>
                             <button id="Gqp-Fi-fE6">
-                                <rect key="frame" x="201" y="14" width="141" height="18"/>
+                                <rect key="frame" x="201" y="14" width="203" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="Main display only" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="IcH-ry-dEy">
+                                <buttonCell key="cell" type="check" title="Écran principal uniquement" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="IcH-ry-dEy">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -61,7 +50,7 @@
                             <textField verticalHuggingPriority="750" id="Ddy-ja-qZS">
                                 <rect key="frame" x="126" y="15" width="71" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Displays:" id="5in-rg-APK">
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Écrans :" id="5in-rg-APK">
                                     <font key="font" metaFont="systemBold"/>
                                     <color key="textColor" white="0.14112903230000001" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -84,9 +73,9 @@ DQ
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" id="Cfk-nw-5hG">
-                        <rect key="frame" x="234" y="13" width="82" height="32"/>
+                        <rect key="frame" x="232" y="13" width="87" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kkW-3B-Fxd">
+                        <buttonCell key="cell" type="push" title="Annuler" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kkW-3B-Fxd">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent" base64-UTF8="YES">
@@ -102,18 +91,18 @@ Gw
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" id="gTS-g2-pmY">
-                                <rect key="frame" x="39" y="53" width="158" height="17"/>
+                                <rect key="frame" x="27" y="53" width="170" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Particles per cyclone:" id="p0z-0r-QzN">
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Particules par cyclone :" id="p0z-0r-QzN">
                                     <font key="font" metaFont="systemBold"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" id="hMK-PZ-frB">
-                                <rect key="frame" x="98" y="23" width="99" height="17"/>
+                                <rect key="frame" x="45" y="23" width="152" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Particle size:" id="gmL-8g-mIR">
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Taille des particules :" id="gmL-8g-mIR">
                                     <font key="font" metaFont="systemBold"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -166,7 +155,7 @@ Gw
                             <textField verticalHuggingPriority="750" id="BsA-2u-ccH">
                                 <rect key="frame" x="132" y="73" width="65" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Speed:" id="s3u-F2-g37">
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Vitesse :" id="s3u-F2-g37">
                                     <font key="font" metaFont="systemBold"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -183,9 +172,9 @@ Gw
                                 </connections>
                             </slider>
                             <button id="2zN-MP-6Ru">
-                                <rect key="frame" x="201" y="18" width="118" height="18"/>
+                                <rect key="frame" x="201" y="18" width="151" height="18"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <buttonCell key="cell" type="check" title="Show curves" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="aqx-kT-20a">
+                                <buttonCell key="cell" type="check" title="Afficher les courbes" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="aqx-kT-20a">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -194,9 +183,9 @@ Gw
                                 </connections>
                             </button>
                             <button id="raY-So-ACC">
-                                <rect key="frame" x="201" y="38" width="74" height="18"/>
+                                <rect key="frame" x="201" y="38" width="85" height="18"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <buttonCell key="cell" type="check" title="Stretch" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="wKh-GX-fKK">
+                                <buttonCell key="cell" type="check" title="Déployer" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="wKh-GX-fKK">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -220,9 +209,9 @@ Gw
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" id="MOV-zz-6fn">
-                                <rect key="frame" x="53" y="21" width="144" height="17"/>
+                                <rect key="frame" x="13" y="21" width="184" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Cyclone complexity:" id="7bV-oS-TDJ">
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Complexité des cyclones :" id="7bV-oS-TDJ">
                                     <font key="font" metaFont="systemBold"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -239,9 +228,9 @@ Gw
                                 </connections>
                             </slider>
                             <textField verticalHuggingPriority="750" id="lHK-Bx-H9D">
-                                <rect key="frame" x="58" y="52" width="139" height="17"/>
+                                <rect key="frame" x="42" y="52" width="155" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Number of cyclones:" id="6AX-y0-bKc">
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Nombre de cyclones :" id="6AX-y0-bKc">
                                     <font key="font" metaFont="systemBold"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -277,6 +266,17 @@ Gw
                             </textField>
                         </subviews>
                     </customView>
+                    <button verticalHuggingPriority="750" id="8tO-nB-ka0">
+                        <rect key="frame" x="14" y="13" width="129" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="À propos de…" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="666-qW-wxE">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showAboutBox:" target="-2" id="D3t-IM-DXO"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <connections>

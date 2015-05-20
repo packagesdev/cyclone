@@ -22,7 +22,7 @@
 		<key>105E9BC54D21C2CCAC5E8BA6F8EC71131C024854</key>
 		<string>../..</string>
 		<key>51F150AFDC369B79AFC620C0E9E34ADCDECB9665</key>
-		<string>../..Cyclone/rsscommon/</string>
+		<string>../..Cyclone/rsscommon</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/packagesdev/cyclone.git</string>
