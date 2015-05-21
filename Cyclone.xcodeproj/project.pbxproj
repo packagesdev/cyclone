@@ -64,6 +64,8 @@
 		F404A7E31AF3A4DC00B88DD0 /* RSSWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSWindow.m; path = rsscommon/RSSWindow.m; sourceTree = "<group>"; };
 		F404A7F41AF3A4EB00B88DD0 /* Rgbhsl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Rgbhsl.cpp; path = rsscommon/GPL/Rgbhsl/Rgbhsl.cpp; sourceTree = "<group>"; };
 		F404A7F61AF3A5A400B88DD0 /* Rgbhsl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rgbhsl.h; path = rsscommon/GPL/Rgbhsl/Rgbhsl.h; sourceTree = "<group>"; };
+		F48318E01B0DCC4E0058C0F9 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F48318E11B0DCC5F0058C0F9 /* es */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = es; path = rsscommon/es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4AA420E1AF536A7006D86F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F4AA42111AF53909006D86F6 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = rsscommon/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4B3D99F1B0D406B00D125DB /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			knownRegions = (
 				en,
 				fr,
+				es,
 			);
 			mainGroup = F404A7A81AF39CED00B88DD0;
 			productRefGroup = F404A7B31AF39CED00B88DD0 /* Products */;
@@ -295,6 +298,7 @@
 			children = (
 				F4AA420E1AF536A7006D86F6 /* en */,
 				F4B3D99F1B0D406B00D125DB /* fr */,
+				F48318E01B0DCC4E0058C0F9 /* es */,
 			);
 			name = RSSCycloneConfigurationWindowController.xib;
 			sourceTree = "<group>";
@@ -304,6 +308,7 @@
 			children = (
 				F4AA42111AF53909006D86F6 /* en */,
 				F4B3D9A01B0D408100D125DB /* fr */,
+				F48318E11B0DCC5F0058C0F9 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
