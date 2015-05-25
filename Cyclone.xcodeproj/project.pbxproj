@@ -72,6 +72,8 @@
 		F4AA42111AF53909006D86F6 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = rsscommon/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4B3D99F1B0D406B00D125DB /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F4B3D9A01B0D408100D125DB /* fr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fr; path = rsscommon/fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4E25DC01B13D7890004E505 /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = sv; path = sv.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F4E25DC11B13D79C0004E505 /* sv */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = sv; path = rsscommon/sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4F450CA1B0FE4EA00B2D1F7 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F4F450CB1B0FE50700B2D1F7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F4F450CC1B0FE51A00B2D1F7 /* it */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = it; path = rsscommon/it.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				it,
 				ja,
 				de,
+				sv,
 			);
 			mainGroup = F404A7A81AF39CED00B88DD0;
 			productRefGroup = F404A7B31AF39CED00B88DD0 /* Products */;
@@ -311,6 +314,7 @@
 				F4F450CA1B0FE4EA00B2D1F7 /* it */,
 				F4F450CB1B0FE50700B2D1F7 /* ja */,
 				F41031111B1286E100B176C1 /* de */,
+				F4E25DC01B13D7890004E505 /* sv */,
 			);
 			name = RSSCycloneConfigurationWindowController.xib;
 			sourceTree = "<group>";
@@ -324,6 +328,7 @@
 				F4F450CC1B0FE51A00B2D1F7 /* it */,
 				F4F450CD1B0FE51F00B2D1F7 /* ja */,
 				F41031121B1286F100B176C1 /* de */,
+				F4E25DC11B13D79C0004E505 /* sv */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
