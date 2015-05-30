@@ -36,6 +36,23 @@
 		F4AA42121AF53909006D86F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4AA42101AF53909006D86F6 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F40A19D01B19EB9600E9523C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F40A19CC1B19EB9600E9523C /* refafactor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F49477B31B15330700763450;
+			remoteInfo = refafactor;
+		};
+		F40A19D21B19EBA300E9523C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F40A19CC1B19EB9600E9523C /* refafactor.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F49477B21B15330700763450;
+			remoteInfo = refafactor;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		F404A7B21AF39CED00B88DD0 /* Cyclone.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cyclone.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		F404A7B61AF39CED00B88DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +81,7 @@
 		F404A7E31AF3A4DC00B88DD0 /* RSSWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSWindow.m; path = rsscommon/RSSWindow.m; sourceTree = "<group>"; };
 		F404A7F41AF3A4EB00B88DD0 /* Rgbhsl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Rgbhsl.cpp; path = rsscommon/GPL/Rgbhsl/Rgbhsl.cpp; sourceTree = "<group>"; };
 		F404A7F61AF3A5A400B88DD0 /* Rgbhsl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rgbhsl.h; path = rsscommon/GPL/Rgbhsl/Rgbhsl.h; sourceTree = "<group>"; };
+		F40A19CC1B19EB9600E9523C /* refafactor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = refafactor.xcodeproj; path = Cyclone/rsscommon/refafactor/refafactor.xcodeproj; sourceTree = "<group>"; };
 		F41031111B1286E100B176C1 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F41031121B1286F100B176C1 /* de */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = de; path = rsscommon/de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F48318E01B0DCC4E0058C0F9 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
@@ -94,6 +112,7 @@
 		F404A7A81AF39CED00B88DD0 = {
 			isa = PBXGroup;
 			children = (
+				F40A19CC1B19EB9600E9523C /* refafactor.xcodeproj */,
 				F404A7B41AF39CED00B88DD0 /* Cyclone */,
 				F404A7B31AF39CED00B88DD0 /* Products */,
 			);
@@ -190,6 +209,14 @@
 			name = Rgbhsl;
 			sourceTree = "<group>";
 		};
+		F40A19CD1B19EB9600E9523C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F40A19D11B19EB9600E9523C /* refafactor */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -223,10 +250,12 @@
 				F404A7AE1AF39CED00B88DD0 /* Frameworks */,
 				F404A7AF1AF39CED00B88DD0 /* Headers */,
 				F404A7B01AF39CED00B88DD0 /* Resources */,
+				F40A19CB1B19EB8200E9523C /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F40A19D31B19EBA300E9523C /* PBXTargetDependency */,
 			);
 			name = Cyclone;
 			productName = Cyclone;
@@ -262,12 +291,28 @@
 			mainGroup = F404A7A81AF39CED00B88DD0;
 			productRefGroup = F404A7B31AF39CED00B88DD0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F40A19CD1B19EB9600E9523C /* Products */;
+					ProjectRef = F40A19CC1B19EB9600E9523C /* refafactor.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F404A7B11AF39CED00B88DD0 /* Cyclone */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F40A19D11B19EB9600E9523C /* refafactor */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = refafactor;
+			remoteRef = F40A19D01B19EB9600E9523C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F404A7B01AF39CED00B88DD0 /* Resources */ = {
@@ -281,6 +326,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F40A19CB1B19EB8200E9523C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#Refactor the rsscommon class to avoid warning or issues when multiple RSS screen savers are installed.\n\n\"${TARGET_BUILD_DIR}\"/refafactor --bundle \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\" --prefix CYC\n\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F404A7AD1AF39CED00B88DD0 /* Sources */ = {
@@ -303,6 +364,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F40A19D31B19EBA300E9523C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = refafactor;
+			targetProxy = F40A19D21B19EBA300E9523C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F4AA420D1AF536A7006D86F6 /* RSSCycloneConfigurationWindowController.xib */ = {
