@@ -34,6 +34,8 @@
 		F404A7F71AF3A5A400B88DD0 /* Rgbhsl.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7F61AF3A5A400B88DD0 /* Rgbhsl.h */; };
 		F4AA420F1AF536A7006D86F6 /* RSSCycloneConfigurationWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4AA420D1AF536A7006D86F6 /* RSSCycloneConfigurationWindowController.xib */; };
 		F4AA42121AF53909006D86F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4AA42101AF53909006D86F6 /* Localizable.strings */; };
+		F4AB00531B49AA2000737BD5 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F4AB00511B49AA2000737BD5 /* thumbnail.png */; };
+		F4AB00541B49AA2000737BD5 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4AB00521B49AA2000737BD5 /* thumbnail@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		F48318E11B0DCC5F0058C0F9 /* es */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = es; path = rsscommon/es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4AA420E1AF536A7006D86F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F4AA42111AF53909006D86F6 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = rsscommon/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4AB00511B49AA2000737BD5 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbnail.png; path = images/thumbnail.png; sourceTree = "<group>"; };
+		F4AB00521B49AA2000737BD5 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbnail@2x.png"; path = "images/thumbnail@2x.png"; sourceTree = "<group>"; };
 		F4B3D99F1B0D406B00D125DB /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F4B3D9A01B0D408100D125DB /* fr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fr; path = rsscommon/fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4E25DC01B13D7890004E505 /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = sv; path = sv.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				F404A7B61AF39CED00B88DD0 /* Info.plist */,
+				F4AB00501B49AA1100737BD5 /* images */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -215,6 +220,15 @@
 				F40A19D11B19EB9600E9523C /* refafactor */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F4AB00501B49AA1100737BD5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F4AB00511B49AA2000737BD5 /* thumbnail.png */,
+				F4AB00521B49AA2000737BD5 /* thumbnail@2x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,8 +333,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4AB00531B49AA2000737BD5 /* thumbnail.png in Resources */,
 				F404A7E61AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.xib in Resources */,
 				F4AA42121AF53909006D86F6 /* Localizable.strings in Resources */,
+				F4AB00541B49AA2000737BD5 /* thumbnail@2x.png in Resources */,
 				F4AA420F1AF536A7006D86F6 /* RSSCycloneConfigurationWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,7 +501,7 @@
 		F404A7BE1AF39CED00B88DD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
+				COMBINE_HIDPI_IMAGES = NO;
 				INFOPLIST_FILE = Cyclone/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,7 +512,7 @@
 		F404A7BF1AF39CED00B88DD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
+				COMBINE_HIDPI_IMAGES = NO;
 				INFOPLIST_FILE = Cyclone/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
