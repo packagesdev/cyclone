@@ -1,13 +1,13 @@
 
 #import "RSSCycloneSettings.h"
 
-NSString * const RSSCyclone_Settings_CyclonesCount=@"Cyclones";
-NSString * const RSSCyclone_Settings_ParticlesCount=@"Particles";
-NSString * const RSSCyclone_Settings_Size=@"Size";
-NSString * const RSSCyclone_Settings_Speed=@"Speed";
-NSString * const RSSCyclone_Settings_Complexity=@"Complexity";
-NSString * const RSSCyclone_Settings_Stretch=@"Stretch";
-NSString * const RSSCyclone_Settings_ShowCurves=@"Curve";
+NSString * const RSSCyclone_Settings_CyclonesCountKey=@"Cyclones";
+NSString * const RSSCyclone_Settings_ParticlesCountKey=@"Particles";
+NSString * const RSSCyclone_Settings_SizeKey=@"Size";
+NSString * const RSSCyclone_Settings_SpeedKey=@"Speed";
+NSString * const RSSCyclone_Settings_ComplexityKey=@"Complexity";
+NSString * const RSSCyclone_Settings_StretchKey=@"Stretch";
+NSString * const RSSCyclone_Settings_ShowCurvesKey=@"Curve";
 
 @implementation RSSCycloneSettings
 
@@ -17,7 +17,7 @@ NSString * const RSSCyclone_Settings_ShowCurves=@"Curve";
 	
 	if (self!=nil)
 	{
-		NSNumber * tNumber=inDictionary[RSSCyclone_Settings_CyclonesCount];
+		NSNumber * tNumber=inDictionary[RSSCyclone_Settings_CyclonesCountKey];
 		
 		if (tNumber==nil)
 		{
@@ -25,16 +25,16 @@ NSString * const RSSCyclone_Settings_ShowCurves=@"Curve";
 		}
 		else
 		{
-			_numberOfCyclones=[inDictionary[RSSCyclone_Settings_CyclonesCount] unsignedIntegerValue];
-			_cycloneComplexity=[inDictionary[RSSCyclone_Settings_Complexity] unsignedIntegerValue];
+			_numberOfCyclones=[inDictionary[RSSCyclone_Settings_CyclonesCountKey] unsignedIntegerValue];
+			_cycloneComplexity=[inDictionary[RSSCyclone_Settings_ComplexityKey] unsignedIntegerValue];
 			
-			_numberOfParticlesPerCyclone=[inDictionary[RSSCyclone_Settings_ParticlesCount] unsignedIntegerValue];
-			_particleSize=[inDictionary[RSSCyclone_Settings_Size] unsignedIntegerValue];
+			_numberOfParticlesPerCyclone=[inDictionary[RSSCyclone_Settings_ParticlesCountKey] unsignedIntegerValue];
+			_particleSize=[inDictionary[RSSCyclone_Settings_SizeKey] unsignedIntegerValue];
 			
-			_speed=[inDictionary[RSSCyclone_Settings_Speed] unsignedIntegerValue];
+			_speed=[inDictionary[RSSCyclone_Settings_SpeedKey] unsignedIntegerValue];
 			
-			_stretch=[inDictionary[RSSCyclone_Settings_Stretch] boolValue];
-			_showCurves=[inDictionary[RSSCyclone_Settings_ShowCurves] boolValue];
+			_stretch=[inDictionary[RSSCyclone_Settings_StretchKey] boolValue];
+			_showCurves=[inDictionary[RSSCyclone_Settings_ShowCurvesKey] boolValue];
 		}
 	}
 	
@@ -47,16 +47,16 @@ NSString * const RSSCyclone_Settings_ShowCurves=@"Curve";
 	
 	if (tMutableDictionary!=nil)
 	{
-		tMutableDictionary[RSSCyclone_Settings_CyclonesCount]=@(_numberOfCyclones);
-		tMutableDictionary[RSSCyclone_Settings_Complexity]=@(_cycloneComplexity);
+		tMutableDictionary[RSSCyclone_Settings_CyclonesCountKey]=@(_numberOfCyclones);
+		tMutableDictionary[RSSCyclone_Settings_ComplexityKey]=@(_cycloneComplexity);
 		
-		tMutableDictionary[RSSCyclone_Settings_ParticlesCount]=@(_numberOfParticlesPerCyclone);
-		tMutableDictionary[RSSCyclone_Settings_Size]=@(_particleSize);
+		tMutableDictionary[RSSCyclone_Settings_ParticlesCountKey]=@(_numberOfParticlesPerCyclone);
+		tMutableDictionary[RSSCyclone_Settings_SizeKey]=@(_particleSize);
 		
-		tMutableDictionary[RSSCyclone_Settings_Speed]=@(_speed);
+		tMutableDictionary[RSSCyclone_Settings_SpeedKey]=@(_speed);
 		
-		tMutableDictionary[RSSCyclone_Settings_Stretch]=@(_stretch);
-		tMutableDictionary[RSSCyclone_Settings_ShowCurves]=@(_showCurves);
+		tMutableDictionary[RSSCyclone_Settings_StretchKey]=@(_stretch);
+		tMutableDictionary[RSSCyclone_Settings_ShowCurvesKey]=@(_showCurves);
 	}
 	
 	return [tMutableDictionary copy];
