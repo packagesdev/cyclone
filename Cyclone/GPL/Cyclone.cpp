@@ -71,8 +71,10 @@ static int factorial(int x)
     int returnval = 1;
 
     if(x == 0)
+	{
         return(1);
-    else
+	}
+	else
 	{
         do
 		{
@@ -233,17 +235,13 @@ cyclone::~cyclone()
 
 void cyclone::update(float * inFact)
 {
-	int i;
-	int temp;
 	float between;
 	float diff;
 	int direction;
 	float point[3];
-	float step;
-	float blend;
 
 	// update cyclone's path
-	temp = _complexity + 2;
+	int temp = _complexity + 2;
 	if(xyzChange[temp][0] == xyzChange[temp][1])
     {
 		oldxyz[temp][0] = xyz[temp][0];
@@ -270,7 +268,7 @@ void cyclone::update(float * inFact)
 		xyzChange[temp][1] = myRandi(7000 / _speed) + 5000 / _speed;
 	}
     
-	for(i=_complexity; i>1; i--)
+	for(int i=_complexity; i>1; i--)
     {
 		if(xyzChange[i][0] == xyzChange[i][1])
         {
@@ -315,7 +313,7 @@ void cyclone::update(float * inFact)
 		xyzChange[0][1] = myRandi(3000 / _speed) + 1500 / _speed;
 	}
     
-	for(i=0; i<(_complexity+3); i++)
+	for(int i=0; i<(_complexity+3); i++)
     {
 		between = float(xyzChange[i][0]) / float(xyzChange[i][1]) * PIx2;
 		between = (1.0f - float(cos(between))) / 2.0f; 
@@ -347,7 +345,7 @@ void cyclone::update(float * inFact)
 		widthChange[temp][1] = myRandi(5000 / _speed) + 5000 / _speed;
 	}
     
-	for(i=_complexity; i>1; i--)
+	for(int i=_complexity; i>1; i--)
     {
 		if(widthChange[i][0] == widthChange[i][1])
         {
@@ -372,7 +370,7 @@ void cyclone::update(float * inFact)
 		widthChange[0][0] = 0;
 		widthChange[0][1] = myRandi(5000 / _speed) + 2000 / _speed;
 	}
-	for(i=0; i<(_complexity+3); i++){
+	for(int i=0; i<(_complexity+3); i++){
 		between = float(widthChange[i][0]) / float(widthChange[i][1]);
 		width[i] = ((targetWidth[i] - oldWidth[i]) * between) + oldWidth[i];
 		widthChange[i][0] ++;
@@ -410,13 +408,13 @@ void cyclone::update(float * inFact)
 		glDisable(GL_LIGHTING);
 		glColor3f(0.0f, 1.0f, 0.0f);
 		glBegin(GL_LINE_STRIP);
-		for(step=0.0; step<1.0; step+=0.02f)
+		for(float step=0.0; step<1.0; step+=0.02f)
         {
 			point[0] = point[1] = point[2] = 0.0f;
             
-			for(i=0; i<(_complexity+3); i++)
+			for(int i=0; i<(_complexity+3); i++)
             {
-				blend = inFact[_complexity+2] / (inFact[i]
+				float blend = inFact[_complexity+2] / (inFact[i]
 					* inFact[_complexity+2-i]) * pow(step, float(i))
 					* pow((1.0f - step), float(_complexity+2-i));
 				point[0] += xyz[i][0] * blend;
@@ -428,7 +426,7 @@ void cyclone::update(float * inFact)
 		glEnd();
 		glColor3f(1.0f, 0.0f, 0.0f);
 		glBegin(GL_LINE_STRIP);
-		for(i=0; i<(_complexity+3); i++)
+		for(int i=0; i<(_complexity+3); i++)
 			glVertex3fv(&xyz[i][0]);
 		glEnd();
 		glEnable(GL_LIGHTING);
@@ -461,8 +459,6 @@ void particle::init()
 
 void particle::update(int inComplexity,int inSpeed,bool inStretch,float *inFact)
 {
-	int i;
-	float scale=0, temp;
 	float newStep;
 	float newSpinAngle;
 	float cyWidth;
@@ -471,7 +467,6 @@ void particle::update(int inComplexity,int inSpeed,bool inStretch,float *inFact)
 	float crossVec[3];
 	float tiltAngle;
 	float up[3] = {0.0f, 1.0f, 0.0f};
-	float blend;
     
 	lastxyz[0] = xyz[0];
 	lastxyz[1] = xyz[1];
@@ -480,9 +475,9 @@ void particle::update(int inComplexity,int inSpeed,bool inStretch,float *inFact)
 		init();
 	xyz[0] = xyz[1] = xyz[2] = 0.0f;
     
-	for(i=0; i<(inComplexity+3); i++)
+	for(int i=0; i<(inComplexity+3); i++)
     {
-		blend = inFact[inComplexity+2] / (inFact[i]
+		float blend = inFact[inComplexity+2] / (inFact[i]
 			* inFact[inComplexity+2-i]) * pow(step, float(i))
 			* pow((1.0f - step), float(inComplexity+2-i));
 		xyz[0] += _cyclone->xyz[i][0] * blend;
@@ -492,9 +487,9 @@ void particle::update(int inComplexity,int inSpeed,bool inStretch,float *inFact)
     
 	dir[0] = dir[1] = dir[2] = 0.0f;
     
-	for(i=0; i<(inComplexity+3); i++)
+	for(int i=0; i<(inComplexity+3); i++)
     {
-		blend = inFact[inComplexity+2] / (inFact[i]
+		float blend = inFact[inComplexity+2] / (inFact[i]
 			* inFact[inComplexity+2-i]) * pow(step - 0.01f, float(i))
 			* pow((1.0f - (step - 0.01f)), float(inComplexity+2-i));
 		dir[0] += _cyclone->xyz[i][0] * blend;
@@ -508,7 +503,7 @@ void particle::update(int inComplexity,int inSpeed,bool inStretch,float *inFact)
 	normalize(dir);
 	cross(dir, up, crossVec);
 	tiltAngle = -acos(dot(dir, up)) * 180.0f / PI;
-	i = int(step * (float(inComplexity) + 2.0f));
+	int i = int(step * (float(inComplexity) + 2.0f));
 	if(i >= (inComplexity + 2))
 		i = inComplexity + 1;
 	between = (step - (float(i) / float(inComplexity + 2))) * float(inComplexity + 2);
@@ -518,10 +513,12 @@ void particle::update(int inComplexity,int inSpeed,bool inStretch,float *inFact)
 	newSpinAngle = (40.0f * float(inSpeed)) / (width * cyWidth);
 	spinAngle += newSpinAngle;
     
+	float scale=0;
+	
 	if(inStretch==true)
     {
 		scale = width * cyWidth * newSpinAngle * 0.02f;
-		temp = cyWidth * 2.0f / float(_size);
+		float temp = cyWidth * 2.0f / float(_size);
 		if(scale > temp)
 			scale = temp;
 		if(scale < 1.0f)
@@ -566,21 +563,11 @@ scene::~scene()
 
 void scene::create()
 {
-	if(!myRandi(500))
-	{  // Easter egg view
-		glRotatef(90, 1, 0, 0);
-		glTranslatef(0.0f, -(wide * 2), 0.0f);
-	}
-	else  // Normal view
-		glTranslatef(0.0f, 0.0f, -(wide * 2));
-	
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 	
 	if (glIsList(1))
-	{
 		glDeleteLists(1,1);
-	}
 	
 	glNewList(1, GL_COMPILE);
 	GLUquadricObj *qobj = gluNewQuadric();
@@ -624,10 +611,23 @@ void scene::resize(int inWidth,int inHeight)
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	gluPerspective(80.0, float(inWidth) / float(inHeight), 50, 3000);
+	
+	if(!myRandi(500))
+	{  // Easter egg view
+		glRotatef(90, 1, 0, 0);
+		glTranslatef(0.0f, -(wide * 2), 0.0f);
+	}
+	else
+	{	// Normal view
+		glTranslatef(0.0f, 0.0f, -(wide * 2));
+	}
 }
 
 void scene::draw()
 {
+	glMatrixMode(GL_MODELVIEW);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	
 	for(int i=0; i<cyclones_count; i++)
 		cyclones[i]->update(fact);
 }
