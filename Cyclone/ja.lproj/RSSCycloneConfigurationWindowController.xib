@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7525" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14F2511" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7525"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="RSSCycloneConfigurationWindowController">
@@ -63,8 +63,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="ディスプレイ：" id="5in-rg-APK">
                                     <font key="font" size="13" name="HiraKakuProN-W6"/>
-                                    <color key="textColor" white="0.14112903230000001" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
@@ -93,7 +93,7 @@ DQ
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="各サイクロン内の粒子数：" id="p0z-0r-QzN">
                                     <font key="font" size="13" name="HiraKakuProN-W6"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" id="hMK-PZ-frB">
@@ -102,7 +102,7 @@ DQ
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="粒子のサイズ：" id="gmL-8g-mIR">
                                     <font key="font" size="13" name="HiraKakuProN-W6"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" id="Bn6-wo-guq">
@@ -145,7 +145,7 @@ DQ
                             </textField>
                         </subviews>
                     </customView>
-                    <customView id="tXk-ed-OX7" customClass="RSSLightGrayBackgroundView">
+                    <customView id="tXk-ed-OX7">
                         <rect key="frame" x="-1" y="108" width="417" height="110"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -155,7 +155,7 @@ DQ
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="速度：" id="s3u-F2-g37">
                                     <font key="font" size="13" name="HiraKakuProN-W6"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" id="N30-dJ-PX5">
@@ -201,7 +201,7 @@ DQ
                             </textField>
                         </subviews>
                     </customView>
-                    <customView id="X49-cp-40K" customClass="RSSLightGrayBackgroundView">
+                    <customView id="X49-cp-40K">
                         <rect key="frame" x="-1" y="303" width="417" height="88"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -211,7 +211,7 @@ DQ
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="サイクロン複雑度：" id="7bV-oS-TDJ">
                                     <font key="font" size="13" name="HiraKakuProN-W6"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" id="6jB-jS-355">
@@ -230,7 +230,7 @@ DQ
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="サイクロン数：" id="6AX-y0-bKc">
                                     <font key="font" size="13" name="HiraKakuProN-W6"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="kZO-Ej-NtE">

@@ -20,8 +20,6 @@
 		F404A7E61AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F404A7D71AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.xib */; };
 		F404A7E71AF3A4DC00B88DD0 /* RSSConfigurationWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7D81AF3A4DC00B88DD0 /* RSSConfigurationWindowController.h */; };
 		F404A7E81AF3A4DC00B88DD0 /* RSSConfigurationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F404A7D91AF3A4DC00B88DD0 /* RSSConfigurationWindowController.m */; };
-		F404A7E91AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7DA1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.h */; };
-		F404A7EA1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F404A7DB1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.m */; };
 		F404A7EB1AF3A4DC00B88DD0 /* RSSSecondaryBox.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7DC1AF3A4DC00B88DD0 /* RSSSecondaryBox.h */; };
 		F404A7EC1AF3A4DC00B88DD0 /* RSSSecondaryBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F404A7DD1AF3A4DC00B88DD0 /* RSSSecondaryBox.m */; };
 		F404A7ED1AF3A4DC00B88DD0 /* RSSSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7DE1AF3A4DC00B88DD0 /* RSSSettings.h */; };
@@ -36,6 +34,8 @@
 		F4AA42121AF53909006D86F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4AA42101AF53909006D86F6 /* Localizable.strings */; };
 		F4AB00531B49AA2000737BD5 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F4AB00511B49AA2000737BD5 /* thumbnail.png */; };
 		F4AB00541B49AA2000737BD5 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4AB00521B49AA2000737BD5 /* thumbnail@2x.png */; };
+		F4D72FB32162BFC90097A338 /* RSSView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D72FB12162BFC90097A338 /* RSSView.h */; };
+		F4D72FB42162BFC90097A338 /* RSSView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D72FB22162BFC90097A338 /* RSSView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +71,6 @@
 		F404A7D71AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RSSAboutBoxWindowController.xib; path = rsscommon/RSSAboutBoxWindowController.xib; sourceTree = "<group>"; };
 		F404A7D81AF3A4DC00B88DD0 /* RSSConfigurationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSConfigurationWindowController.h; path = rsscommon/RSSConfigurationWindowController.h; sourceTree = "<group>"; };
 		F404A7D91AF3A4DC00B88DD0 /* RSSConfigurationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSConfigurationWindowController.m; path = rsscommon/RSSConfigurationWindowController.m; sourceTree = "<group>"; };
-		F404A7DA1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSLightGrayBackgroundView.h; path = rsscommon/RSSLightGrayBackgroundView.h; sourceTree = "<group>"; };
-		F404A7DB1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSLightGrayBackgroundView.m; path = rsscommon/RSSLightGrayBackgroundView.m; sourceTree = "<group>"; };
 		F404A7DC1AF3A4DC00B88DD0 /* RSSSecondaryBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSSecondaryBox.h; path = rsscommon/RSSSecondaryBox.h; sourceTree = "<group>"; };
 		F404A7DD1AF3A4DC00B88DD0 /* RSSSecondaryBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSSecondaryBox.m; path = rsscommon/RSSSecondaryBox.m; sourceTree = "<group>"; };
 		F404A7DE1AF3A4DC00B88DD0 /* RSSSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSSettings.h; path = rsscommon/RSSSettings.h; sourceTree = "<group>"; };
@@ -94,6 +92,8 @@
 		F4AB00521B49AA2000737BD5 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbnail@2x.png"; path = "images/thumbnail@2x.png"; sourceTree = "<group>"; };
 		F4B3D99F1B0D406B00D125DB /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F4B3D9A01B0D408100D125DB /* fr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fr; path = rsscommon/fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4D72FB12162BFC90097A338 /* RSSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSView.h; path = rsscommon/RSSView.h; sourceTree = "<group>"; };
+		F4D72FB22162BFC90097A338 /* RSSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSView.m; path = rsscommon/RSSView.m; sourceTree = "<group>"; };
 		F4E25DC01B13D7890004E505 /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = sv; path = sv.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F4E25DC11B13D79C0004E505 /* sv */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = sv; path = rsscommon/sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4F450CA1B0FE4EA00B2D1F7 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
@@ -182,8 +182,8 @@
 				F404A7D71AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.xib */,
 				F404A7D81AF3A4DC00B88DD0 /* RSSConfigurationWindowController.h */,
 				F404A7D91AF3A4DC00B88DD0 /* RSSConfigurationWindowController.m */,
-				F404A7DA1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.h */,
-				F404A7DB1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.m */,
+				F4D72FB12162BFC90097A338 /* RSSView.h */,
+				F4D72FB22162BFC90097A338 /* RSSView.m */,
 				F404A7DC1AF3A4DC00B88DD0 /* RSSSecondaryBox.h */,
 				F404A7DD1AF3A4DC00B88DD0 /* RSSSecondaryBox.m */,
 				F404A7DE1AF3A4DC00B88DD0 /* RSSSettings.h */,
@@ -239,8 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F404A7EB1AF3A4DC00B88DD0 /* RSSSecondaryBox.h in Headers */,
-				F404A7E91AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.h in Headers */,
 				F404A7ED1AF3A4DC00B88DD0 /* RSSSettings.h in Headers */,
+				F4D72FB32162BFC90097A338 /* RSSView.h in Headers */,
 				F404A7D11AF39E5E00B88DD0 /* Cyclone.h in Headers */,
 				F404A7C81AF39D8A00B88DD0 /* RSSCycloneSettings.h in Headers */,
 				F404A7CA1AF39D8A00B88DD0 /* RSSCycloneView.h in Headers */,
@@ -367,7 +367,6 @@
 				F404A7F21AF3A4DC00B88DD0 /* RSSWindow.m in Sources */,
 				F404A7F51AF3A4EB00B88DD0 /* Rgbhsl.cpp in Sources */,
 				F404A7CB1AF39D8A00B88DD0 /* RSSCycloneView.mm in Sources */,
-				F404A7EA1AF3A4DC00B88DD0 /* RSSLightGrayBackgroundView.m in Sources */,
 				F404A7D01AF39E5E00B88DD0 /* Cyclone.cpp in Sources */,
 				F404A7F01AF3A4DC00B88DD0 /* RSSUserDefaults+Constants.m in Sources */,
 				F404A7C71AF39D8A00B88DD0 /* RSSCycloneConfigurationWindowController.m in Sources */,
@@ -376,6 +375,7 @@
 				F404A7C91AF39D8A00B88DD0 /* RSSCycloneSettings.m in Sources */,
 				F404A7E81AF3A4DC00B88DD0 /* RSSConfigurationWindowController.m in Sources */,
 				F404A7EE1AF3A4DC00B88DD0 /* RSSSettings.m in Sources */,
+				F4D72FB42162BFC90097A338 /* RSSView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +502,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 6;
 				INFOPLIST_FILE = Cyclone/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -515,7 +515,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 6;
 				INFOPLIST_FILE = Cyclone/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
