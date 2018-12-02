@@ -30,6 +30,8 @@
 		F404A7F21AF3A4DC00B88DD0 /* RSSWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F404A7E31AF3A4DC00B88DD0 /* RSSWindow.m */; };
 		F404A7F51AF3A4EB00B88DD0 /* Rgbhsl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F404A7F41AF3A4EB00B88DD0 /* Rgbhsl.cpp */; };
 		F404A7F71AF3A5A400B88DD0 /* Rgbhsl.h in Headers */ = {isa = PBXBuildFile; fileRef = F404A7F61AF3A5A400B88DD0 /* Rgbhsl.h */; };
+		F47582F821B4041A002754BC /* NSColor+LabelColor.h in Headers */ = {isa = PBXBuildFile; fileRef = F47582F621B4041A002754BC /* NSColor+LabelColor.h */; };
+		F47582F921B4041A002754BC /* NSColor+LabelColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F47582F721B4041A002754BC /* NSColor+LabelColor.m */; };
 		F4AA420F1AF536A7006D86F6 /* RSSCycloneConfigurationWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4AA420D1AF536A7006D86F6 /* RSSCycloneConfigurationWindowController.xib */; };
 		F4AA42121AF53909006D86F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4AA42101AF53909006D86F6 /* Localizable.strings */; };
 		F4AB00531B49AA2000737BD5 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F4AB00511B49AA2000737BD5 /* thumbnail.png */; };
@@ -84,6 +86,8 @@
 		F40A19CC1B19EB9600E9523C /* refafactor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = refafactor.xcodeproj; path = Cyclone/rsscommon/refafactor/refafactor.xcodeproj; sourceTree = "<group>"; };
 		F41031111B1286E100B176C1 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F41031121B1286F100B176C1 /* de */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = de; path = rsscommon/de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F47582F621B4041A002754BC /* NSColor+LabelColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+LabelColor.h"; path = "rsscommon/NSColor+LabelColor.h"; sourceTree = "<group>"; };
+		F47582F721B4041A002754BC /* NSColor+LabelColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+LabelColor.m"; path = "rsscommon/NSColor+LabelColor.m"; sourceTree = "<group>"; };
 		F48318E01B0DCC4E0058C0F9 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F48318E11B0DCC5F0058C0F9 /* es */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = es; path = rsscommon/es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4AA420E1AF536A7006D86F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RSSCycloneConfigurationWindowController.xib; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				F404A7F31AF3A4DF00B88DD0 /* GPL */,
+				F47582F621B4041A002754BC /* NSColor+LabelColor.h */,
+				F47582F721B4041A002754BC /* NSColor+LabelColor.m */,
 				F404A7D51AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.h */,
 				F404A7D61AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.m */,
 				F404A7D71AF3A4DC00B88DD0 /* RSSAboutBoxWindowController.xib */,
@@ -239,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F404A7EB1AF3A4DC00B88DD0 /* RSSSecondaryBox.h in Headers */,
+				F47582F821B4041A002754BC /* NSColor+LabelColor.h in Headers */,
 				F404A7ED1AF3A4DC00B88DD0 /* RSSSettings.h in Headers */,
 				F4D72FB32162BFC90097A338 /* RSSView.h in Headers */,
 				F404A7D11AF39E5E00B88DD0 /* Cyclone.h in Headers */,
@@ -376,6 +383,7 @@
 				F404A7E81AF3A4DC00B88DD0 /* RSSConfigurationWindowController.m in Sources */,
 				F404A7EE1AF3A4DC00B88DD0 /* RSSSettings.m in Sources */,
 				F4D72FB42162BFC90097A338 /* RSSView.m in Sources */,
+				F47582F921B4041A002754BC /* NSColor+LabelColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = NO;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				INFOPLIST_FILE = Cyclone/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -515,7 +523,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = NO;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				INFOPLIST_FILE = Cyclone/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
