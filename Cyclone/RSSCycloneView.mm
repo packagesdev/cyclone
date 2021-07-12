@@ -68,7 +68,7 @@
 
 #pragma mark -
 
-- (void) setFrameSize:(NSSize)newSize
+- (void)setFrameSize:(NSSize)newSize
 {
 	[super setFrameSize:newSize];
 	
@@ -78,7 +78,7 @@
 
 #pragma mark -
 
-- (void) drawRect:(NSRect) inFrame
+- (void)drawRect:(NSRect) inFrame
 {
 	[[NSColor blackColor] set];
 	
@@ -101,7 +101,7 @@
 			NSRect tFrame=self.frame;
 			
 			NSMutableParagraphStyle * tMutableParagraphStyle=[[NSParagraphStyle defaultParagraphStyle] mutableCopy];
-			[tMutableParagraphStyle setAlignment:NSCenterTextAlignment];
+			tMutableParagraphStyle.alignment=NSCenterTextAlignment;
 			
 			NSDictionary * tAttributes = @{NSFontAttributeName:[NSFont systemFontOfSize:[NSFont systemFontSize]],
 										   NSForegroundColorAttributeName:[NSColor whiteColor],
@@ -176,7 +176,7 @@
 		return;
 	}
 	
-	[[_openGLView openGLContext] makeCurrentContext];
+	[_openGLView.openGLContext makeCurrentContext];
 	
 	NSRect tPixelBounds=[_openGLView convertRectToBacking:_openGLView.bounds];
 	NSSize tSize=tPixelBounds.size;
@@ -210,12 +210,12 @@
 {
 	if (_openGLView!=nil)
 	{
-		[[_openGLView openGLContext] makeCurrentContext];
+		[_openGLView.openGLContext makeCurrentContext];
 		
 		if (_scene!=NULL)
 			_scene->draw();
 		
-		[[_openGLView openGLContext] flushBuffer];
+		[_openGLView.openGLContext flushBuffer];
 	}
 }
 
@@ -229,7 +229,7 @@
 - (NSWindow*)configureSheet
 {
 	if (_configurationWindowController==nil)
-		_configurationWindowController=[[RSSCycloneConfigurationWindowController alloc] init];
+		_configurationWindowController=[RSSCycloneConfigurationWindowController new];
 	
 	NSWindow * tWindow=_configurationWindowController.window;
 	

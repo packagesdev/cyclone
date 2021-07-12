@@ -47,7 +47,7 @@
 {
 	[super windowDidLoad];
 	
-	_numberFormatter=[[NSNumberFormatter alloc] init];
+	_numberFormatter=[NSNumberFormatter new];
 	
 	if (_numberFormatter!=nil)
 	{
@@ -67,23 +67,23 @@
 	
 	RSSCycloneSettings * tCycloneSettings=(RSSCycloneSettings *) sceneSettings;
 	
-	[_numberOfCyclonesSlider setIntegerValue:tCycloneSettings.numberOfCyclones];
-	[_numberOfCyclonesValueLabel setIntegerValue:tCycloneSettings.numberOfCyclones];
+	_numberOfCyclonesSlider.integerValue=tCycloneSettings.numberOfCyclones;
+	_numberOfCyclonesValueLabel.integerValue=tCycloneSettings.numberOfCyclones;
 	
-	[_numberOfParticlesSlider setIntegerValue:tCycloneSettings.numberOfParticlesPerCyclone];
-	[_numberOfParticlesValueLabel setIntegerValue:tCycloneSettings.numberOfParticlesPerCyclone];
+	_numberOfParticlesSlider.integerValue=tCycloneSettings.numberOfParticlesPerCyclone;
+	_numberOfParticlesValueLabel.integerValue=tCycloneSettings.numberOfParticlesPerCyclone;
 	
-	[_particleSizeSlider setIntegerValue:tCycloneSettings.particleSize];
-	[_particleSizeValueLabel setIntegerValue:tCycloneSettings.particleSize];
+	_particleSizeSlider.integerValue=tCycloneSettings.particleSize;
+	_particleSizeValueLabel.integerValue=tCycloneSettings.particleSize;
 	
-	[_cycloneComplexitySlider setIntegerValue:tCycloneSettings.cycloneComplexity];
-	[_cycloneComplexityValueLabel setIntegerValue:tCycloneSettings.cycloneComplexity];
+	_cycloneComplexitySlider.integerValue=tCycloneSettings.cycloneComplexity;
+	_cycloneComplexityValueLabel.integerValue=tCycloneSettings.cycloneComplexity;
 	
-	[_speedSlider setIntegerValue:tCycloneSettings.speed];
-	[_speedValueLabel setIntegerValue:tCycloneSettings.speed];
+	_speedSlider.integerValue=tCycloneSettings.speed;
+	_speedValueLabel.integerValue=tCycloneSettings.speed;
 	
-	[_stretchButton setState:(tCycloneSettings.stretch==YES) ? NSOnState : NSOffState];
-	[_showCurvesButton setState:(tCycloneSettings.showCurves==YES) ? NSOnState : NSOffState];
+	_stretchButton.state=(tCycloneSettings.stretch==YES) ? NSOnState : NSOffState;
+	_showCurvesButton.state=(tCycloneSettings.showCurves==YES) ? NSOnState : NSOffState;
 }
 
 #pragma mark -
@@ -92,37 +92,37 @@
 {
 	((RSSCycloneSettings *) sceneSettings).numberOfCyclones=[sender integerValue];
 	
-	[_numberOfCyclonesValueLabel setIntegerValue:((RSSCycloneSettings *) sceneSettings).numberOfCyclones];
+	_numberOfCyclonesValueLabel.integerValue=((RSSCycloneSettings *) sceneSettings).numberOfCyclones;
 }
 
 - (IBAction)setNumberOfParticles:(id)sender
 {
 	((RSSCycloneSettings *) sceneSettings).numberOfParticlesPerCyclone=[sender integerValue];
 	
-	NSString * tFormattedString=[_numberFormatter stringFromNumber:[NSNumber numberWithUnsignedInteger:((RSSCycloneSettings *) sceneSettings).numberOfParticlesPerCyclone]];
+	NSString * tFormattedString=[_numberFormatter stringFromNumber:@(((RSSCycloneSettings *) sceneSettings).numberOfParticlesPerCyclone)];
 	
-	[_numberOfParticlesValueLabel setStringValue:tFormattedString];
+	_numberOfParticlesValueLabel.stringValue=tFormattedString;
 }
 
 - (IBAction)setParticleSize:(id)sender
 {
 	((RSSCycloneSettings *) sceneSettings).particleSize=[sender integerValue];
 	
-	[_particleSizeValueLabel setIntegerValue:((RSSCycloneSettings *) sceneSettings).particleSize];
+	_particleSizeValueLabel.integerValue=((RSSCycloneSettings *) sceneSettings).particleSize;
 }
 
 - (IBAction)setCycloneComplexity:(id)sender
 {
 	((RSSCycloneSettings *) sceneSettings).cycloneComplexity=[sender integerValue];
 	
-	[_cycloneComplexityValueLabel setIntegerValue:((RSSCycloneSettings *) sceneSettings).cycloneComplexity];
+	_cycloneComplexityValueLabel.integerValue=((RSSCycloneSettings *) sceneSettings).cycloneComplexity;
 }
 
 - (IBAction)setSpeed:(id)sender
 {
 	((RSSCycloneSettings *) sceneSettings).speed=[sender integerValue];
 	
-	[_speedValueLabel setIntegerValue:((RSSCycloneSettings *) sceneSettings).speed];
+	_speedValueLabel.integerValue=((RSSCycloneSettings *) sceneSettings).speed;
 }
 
 - (IBAction)setStretch:(id)sender
